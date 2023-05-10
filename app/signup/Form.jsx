@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 function Form() {
@@ -9,6 +9,11 @@ function Form() {
   const [email, setEmail] = useState("Marry Doe");
   const [password, setPassword] = useState("Marry Doe");
   const [companyname, setCompanyname] = useState("Marry Doe");
+const router = useRouter()
+  const signuphandle = (e) => {
+    e.preventDefault()
+    router.push('/signin')
+  }
 
   return (
     <>
@@ -141,10 +146,8 @@ function Form() {
       </div>
 
       {/* Btn */}
-      <button onClick={(e)=>{e.preventDefault()}} className="bg-[#6C25FF] text-[16px] mb-[1 0px] text-white h-[46px] w-full rounded-[6px] mt-auto">
-        <Link href="/signin" >
+      <button onClick={signuphandle} className="bg-[#6C25FF] text-[16px] mb-[1 0px] text-white h-[46px] w-full rounded-[6px] mt-auto">
         Create Account
-        </Link>
       </button>
     </form>
       </>

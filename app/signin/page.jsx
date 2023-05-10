@@ -9,9 +9,7 @@ function signin() {
                 Signin to your PopX account
             </h1>
             <h2 className='text-[18px] text-[#1D2226]/60 w-[232px] h-[48px] font mb-[33px] mt-[14px] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h2>
-
             <SignInForm />
-
         </div>
     )
 }

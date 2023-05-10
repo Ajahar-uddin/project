@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import { Rubik } from "next/font/google";
 
@@ -11,9 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+   
+
       <body
         className={`${rubik.className} flex flex-col-reverse h-screen w-full bg-[#F7F8F9]  `}
-      >
+        >
         {" "}
         {children}{" "}
       </body>
