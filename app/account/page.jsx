@@ -5,7 +5,7 @@ import cameraIcon from "../../public/camera.png";
 
 function account() {
   return (
-    <div className="flex flex-col h-full pb-9">
+    <div className=" flex flex-col h-full pb-9 md:max-w-[375px] md:mx-auto">
       <div className="  bg-white pt-[27px] px-[15px] pb-[19px] leading-[22px] shadow-[#00000007] shadow-md">
         <p className="text-[#1D2226] text-[18px] ">Account Settings</p>
       </div>

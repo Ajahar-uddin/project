@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className=" p-[20px] ">
+      <div className=" p-[20px] md:max-w-[375px] md:mx-auto ">
         <h1 className="text-[#1D2226] text-[28px] font-medium w-[231px] h-[33px] mb-[10px] ">
           Welcome to PopX
         </h1>

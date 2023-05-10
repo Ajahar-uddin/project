@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 function Form() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [companyname, setCompanyname] = useState("");
+  const [name, setName] = useState("Marry Doe");
+  const [phone, setPhone] = useState("Marry Doe");
+  const [email, setEmail] = useState("Marry Doe");
+  const [password, setPassword] = useState("Marry Doe");
+  const [companyname, setCompanyname] = useState("Marry Doe");
 
   return (
     <>
@@ -141,7 +141,7 @@ function Form() {
       </div>
 
       {/* Btn */}
-      <button onClick={(e)=>{e.preventDefault()}} className="bg-[#6C25FF] text-[16px] text-white h-[46px] w-full rounded-[6px] mt-auto">
+      <button onClick={(e)=>{e.preventDefault()}} className="bg-[#6C25FF] text-[16px] mb-[1 0px] text-white h-[46px] w-full rounded-[6px] mt-auto">
         <Link href="/signin" >
         Create Account
         </Link>
